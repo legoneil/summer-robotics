@@ -19,8 +19,10 @@ public class MeepMeepTesting {
                 .lineToYLinearHeading(20, Math.toRadians(140))
                 .strafeTo(new Vector2d(-23.6, 23.3))
                 //shoot two balls at pos 1, second collection begins
-                .waitSeconds(3)
-                .lineToXLinearHeading(-59, 270)
+                .waitSeconds(1)
+                .strafeToSplineHeading(new Vector2d(-58, 30), Math.toRadians(270))
+                .waitSeconds(1)
+                .lineToY(20)
                 .build());
 
 

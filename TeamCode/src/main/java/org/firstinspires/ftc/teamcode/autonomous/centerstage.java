@@ -1,4 +1,11 @@
 package org.firstinspires.ftc.teamcode.autonomous;
 
-public class centerstage {
+import com.acmerobotics.dashboard.config.Config;
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+
+@Config
+@Autonomous(name = "centerstage", group = "Autonomous")
+public class centerstage extends LinearOpMode {
+
 }

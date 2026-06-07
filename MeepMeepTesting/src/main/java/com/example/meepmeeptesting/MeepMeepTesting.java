@@ -16,13 +16,21 @@ public class MeepMeepTesting {
                 .build();
 
         myBot.runAction(myBot.getDrive().actionBuilder(new Pose2d(-15.9, -69.6, Math.toRadians(270)))
-                .lineToYLinearHeading(20, Math.toRadians(140))
-                .strafeTo(new Vector2d(-23.6, 23.3))
+                .strafeToSplineHeading(new Vector2d(-23.6, 23.3), Math.toRadians(140))
+
                 //shoot two balls at pos 1, second collection begins
                 .waitSeconds(1)
                 .strafeToSplineHeading(new Vector2d(-58, 30), Math.toRadians(270))
                 .waitSeconds(1)
                 .lineToY(20)
+                .waitSeconds(2)
+                .strafeToSplineHeading(new Vector2d(-23.6, 23.3), Math.toRadians(140))
+                .waitSeconds(2)
+                .strafeToSplineHeading(new Vector2d(-57, -5.5), Math.toRadians(270))
+                .waitSeconds(2)
+                .strafeToSplineHeading(new Vector2d(-23.6, 23.3), Math.toRadians(140))
+                .waitSeconds(2)
+                .strafeToSplineHeading(new Vector2d(-23, -18), Math.toRadians(180))
                 .build());
 
 

@@ -46,7 +46,7 @@ public class sampleAutoTraj extends LinearOpMode {
                 .build();
         Action go_to_final_pos = drive.actionBuilder(shot_pose)
                 .strafeToSplineHeading(new Vector2d(-23, 27), Math.toRadians(180))
-                        .build();
+                .build();
 
 
 

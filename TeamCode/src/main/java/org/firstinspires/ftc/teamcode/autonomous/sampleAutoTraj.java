@@ -17,7 +17,7 @@ import org.firstinspires.ftc.teamcode.MecanumDrive;
 public class sampleAutoTraj extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
-        Pose2d beginPose = new Pose2d(new Vector2d(-59.9, -69.6), Math.toRadians(270));
+        Pose2d beginPose = new Pose2d(new Vector2d(-54, 55), Math.toRadians(315));
         Pose2d shot_pose = new Pose2d(new Vector2d(-23.6, 23.3), Math.toRadians(140));
         Pose2d shot_2_spot = new Pose2d(new Vector2d(-58.2, 20.6), Math.toRadians(270));
         Pose2d collect_spot_2 = new Pose2d(new Vector2d(-57, -5.5), Math.toRadians(270));
@@ -45,7 +45,7 @@ public class sampleAutoTraj extends LinearOpMode {
                 .waitSeconds(2)
                 .build();
         Action go_to_final_pos = drive.actionBuilder(shot_pose)
-                .strafeToSplineHeading(new Vector2d(-23, -18), Math.toRadians(180))
+                .strafeToSplineHeading(new Vector2d(-23, 27), Math.toRadians(180))
                         .build();
 
 

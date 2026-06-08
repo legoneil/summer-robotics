@@ -15,7 +15,7 @@ public class MeepMeepTesting {
                 .setConstraints(60, 60, Math.toRadians(180), Math.toRadians(150), 15)
                 .build();
 
-        myBot.runAction(myBot.getDrive().actionBuilder(new Pose2d(-15.9, -69.6, Math.toRadians(270)))
+        myBot.runAction(myBot.getDrive().actionBuilder(new Pose2d(-54, 55, Math.toRadians(315)))
                 .strafeToSplineHeading(new Vector2d(-23.6, 23.3), Math.toRadians(140))
 
                 //shoot two balls at pos 1, second collection begins
@@ -30,7 +30,7 @@ public class MeepMeepTesting {
                 .waitSeconds(2)
                 .strafeToSplineHeading(new Vector2d(-23.6, 23.3), Math.toRadians(140))
                 .waitSeconds(2)
-                .strafeToSplineHeading(new Vector2d(-23, -18), Math.toRadians(180))
+                .strafeToSplineHeading(new Vector2d(-23, 27), Math.toRadians(180))
                 .build());
 
 
